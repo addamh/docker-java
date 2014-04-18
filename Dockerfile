@@ -11,7 +11,7 @@ FROM bradrydzewski/java:oraclejdk7
 RUN sudo apt-get update
 RUN sudo apt-get install -y software-properties-common
 ADD hosts /tmp/hosts
-ENTRYPOINT umount /etc/hosts && cat /tmp/hosts >> /etc/hosts && bash
+ENTRYPOINT sudo umount /etc/hosts && sudo cat /tmp/hosts >> /etc/hosts && bash
 RUN sudo apt-get install -y git
 
 
