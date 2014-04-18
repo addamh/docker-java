@@ -11,7 +11,7 @@ FROM bradrydzewski/java:oraclejdk7
 RUN sudo apt-get update
 RUN sudo apt-get install -y software-properties-common dnsmasq
 
-RUN sudo touch etc/dnsmasq.d/0hosts
+RUN sudo touch /etc/dnsmasq.d/0hosts
 
 # /etc/hosts values
 RUN sudo echo 'address="/ci.ttagg.com/192.168.3.32"' >> /etc/dnsmasq.d/0hosts
