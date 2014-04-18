@@ -12,7 +12,6 @@ RUN sudo apt-get update
 RUN sudo apt-get install -y software-properties-common dnsmasq
 
   RUN sudo chmod 777 /etc/dnsmasq.conf 
-  RUN sudo chmod 777 /etc/resolv.conf
   RUN sudo chmod 777 /etc/init.d/dnsmasq
   RUN sudo echo 'address="/ci.ttagg.com/192.168.3.32"' >> /etc/dnsmasq.conf
   RUN sudo echo 'nameserver 192.168.0.1' >> /etc/resolv.conf
