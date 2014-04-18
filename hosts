@@ -1,0 +1,45 @@
+192.168.50.2 hadoop-manager.cluster hadoop-manager
+192.168.50.3 hadoop-node1.cluster hadoop-node1
+192.168.50.4 hadoop-node2.cluster hadoop-node2
+
+192.168.3.4 ttagg-db
+192.168.3.4 ttagg-db-master
+192.168.3.31 build.ttagg.com ttagg-build
+192.168.3.32 ci.ttagg.com
+192.168.3.33 trawler01.ttagg.com 
+192.168.3.37 trawler02.ttagg.com
+192.168.3.38 trawler03.ttagg.com
+192.168.3.44 trawler04.ttagg.com
+
+#Hadoop Cluster Private Network
+#192.168.3.2 http://monitor.ttagg.com
+#192.168.3.6 http://whale01.ttagg.com
+#192.168.3.6 ttagg-hadoop-master
+#192.168.3.7 http://whale02.ttagg.com
+#192.168.3.8 http://whale03.ttagg.com
+#192.168.3.9 http://whale04.ttagg.com
+#192.168.3.10 http://whale05.ttagg.com
+#192.168.3.11 http://whale06.ttagg.com
+#192.168.3.12 http://whale07.ttagg.com
+#192.168.3.13 http://whale08.ttagg.com
+#192.168.3.14 http://whale09.ttagg.com
+#192.168.3.15 http://whale10.ttagg.com
+#192.168.3.16 http://whale11.ttagg.com
+#192.168.3.17 http://whale12.ttagg.com
+#192.168.3.18 http://whale13.ttagg.com
+#192.168.3.19 whale14.ttagg.com
+#192.168.3.20 whale15.ttagg.com
+#192.168.3.21 whale16.ttagg.com
+#192.168.3.22 whale17.ttagg.com
+#192.168.3.23 whale18.ttagg.com
+#192.168.3.24 whale19.ttagg.com
+#192.168.3.25 whale20.ttagg.com
+#192.168.3.26 whale21.ttagg.com
+#192.168.3.27 whale22.ttagg.com
+#192.168.3.28 whale23.ttagg.com
+#192.168.3.29 whale24.ttagg.com
+#192.168.3.30 whale25.ttagg.com
+
+#BLOCK PHOTOSHOP!
+127.0.0.1 lmlicenses.wip4.adobe.com
+127.0.0.1 lm.licenses.adobe.com
