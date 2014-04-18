@@ -5,16 +5,17 @@
 #
 
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM bradrydzewski/java:oraclejdk7
 
 # Install Java
 RUN apt-get install -y software-properties-common
-RUN add-apt-repository -y ppa:webupd8team/java
 RUN apt-get update
-RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
-RUN echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
-RUN apt-get install -y oracle-java7-installer
+ADD hosts /tmp/hosts
+RUN mkdir -p -- /lib-override && cp /lib/x86_64-linux-gnu/libnss_files.so.2 /lib-override
+RUN perl -pi -e 's:/etc/hosts:/tmp/hosts:g' /lib-override/libnss_files.so.2
+ENV LD_LIBRARY_PATH /lib-override
 RUN apt-get install -y git
+
 
 # Define default command.
 CMD ["java"]
