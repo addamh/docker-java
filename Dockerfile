@@ -12,7 +12,7 @@ RUN sudo apt-get update
 RUN sudo apt-get install -y software-properties-common
 
 ADD hosts /tmp/hosts
-RUN sudo umount /etc/hosts && cat /tmp/hosts >> /etc/hosts
+RUNP sudo umount /etc/hosts && cat /tmp/hosts >> /etc/hosts
 RUN sudo apt-get install -y git
 
 # Define default command.
