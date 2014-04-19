@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM bradrydzewski/java:oraclejdk8
+FROM bradrydzewski/java:oraclejdk7
 
 # Install Java
 RUN sudo apt-get update
