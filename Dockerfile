@@ -1,9 +1,3 @@
-#
-# Java Dockerfile
-#
-# https://github.com/dockerfile/java
-#
-
 # Pull base image.
 FROM bradrydzewski/java:oraclejdk7
 
